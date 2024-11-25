@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talha Mazhar | Civil Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Talha Mazhar</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="home-content">
+            <h2>Welcome to My Professional Portfolio</h2>
+            <p>Civil Engineer | AI Enthusiast | Project Leader</p>
+            <button onclick="scrollToSection('about')">Learn More</button>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p>Hi, I'm Talha Mazhar, a passionate civil engineer with a keen interest in AI and sustainable construction technologies. My journey has led me to design innovative solutions for modern-day infrastructure.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="projects-content">
+            <h2>Featured Projects</h2>
+            <div class="project-cards">
+                <div class="card" onclick="openProjectDetails('project1')">
+                    <h3>AI in Civil Engineering</h3>
+                    <p>Developing AI models for construction project optimization.</p>
+                </div>
+                <div class="card" onclick="openProjectDetails('project2')">
+                    <h3>Sustainable Infrastructure</h3>
+                    <p>Leading eco-friendly projects for rural development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact-content">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit" onclick="submitForm(event)">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Talha Mazhar | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
