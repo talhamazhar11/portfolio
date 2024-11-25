@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talha Mazhar - Civil Engineer Portfolio</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+            background: #0a0a0a;
+        }
+
+        /* Header Section */
+        header {
+            background: url('https://source.unsplash.com/1600x900/?architecture,construction') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            text-align: center;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+
+        header h1 {
+            z-index: 2;
+            font-size: 4rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            z-index: 2;
+            font-size: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        header a {
+            z-index: 2;
+            display: inline-block;
+            margin-top: 1.5rem;
+            text-decoration: none;
+            padding: 0.8rem 1.5rem;
+            background: #e50914;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        header a:hover {
+            background: #ff3838;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 10;
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            margin-left: 1.5rem;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #e50914;
+        }
+
+        /* About Section */
+        section {
+            max-width: 1200px;
+            margin: 5rem auto;
+            padding: 2rem;
+            color: white;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        section p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        /* Projects Section */
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .project-card {
+            background: #151515;
+            border-radius: 10px;
+            width: 300px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-card h3 {
+            padding: 1rem;
+            background: #e50914;
+            color: white;
+            margin: 0;
+        }
+
+        .project-card p {
+            padding: 1rem;
+            color: #aaa;
+        }
+
+        /* Footer */
+        footer {
+            background: #151515;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        footer a {
+            color: #e50914;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ff3838;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                margin: 0.5rem 0;
+            }
+
+            .projects {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">Talha Mazhar</div>
+    <div>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<header>
+    <h1>Talha Mazhar</h1>
+    <p>Civil Engineer | Building the Future | Innovating Infrastructure</p>
+    <a href="#contact">Contact Me</a>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a passionate Civil Engineer with expertise in sustainable construction and the integration of AI technologies in infrastructure design. My goal is to shape a smarter, greener, and more resilient future for our built environment.
+    </p>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+        <div class="project-card">
+            <img src="https://source.unsplash.com/300x200/?bricks,engineering" alt="Project 1">
+            <h3>AI Material Strength Predictor</h3>
+            <p>Developed an AI-powered tool for predicting the compressive and flexural strength of interlocking bricks.</p>
+        </div>
+        <div class="project-card">
+            <img src="https://source.unsplash.com/300x200/?construction,blueprints" alt="Project 2">
+            <h3>Municipal Field Internship</h3>
+            <p>Hands-on construction experience at Punjab Rural Municipal Services Company.</p>
+        </div>
+        <div class="project-card">
+            <img src="https://source.unsplash.com/300x200/?engineering,software" alt="Project 3">
+            <h3>Workshops & Training</h3>
+            <p>Conducted workshops on AutoCAD, Python, and ETABS for engineering students.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:talhamazhar@example.com">talhamazhar@example.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/talhamazhar" target="_blank">linkedin.com/in/talhamazhar</a></p>
+</section>
+
+<footer>
+    <p>© 2024 Talha Mazhar. Designed with passion. <a href="#about">Back to top</a></p>
+</footer>
+
+</body>
+</html>
