@@ -1,0 +1,191 @@
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+}
+
+/* Navigation Bar */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #005a87;
+    color: #fff;
+    padding: 20px 0;
+    z-index: 10;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+
+header nav .logo h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+header nav .nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+header nav .nav-links li {
+    list-style: none;
+}
+
+header nav .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+header nav .nav-links li a:hover {
+    color: #f7f7f7;
+}
+
+/* Home Section */
+#home {
+    height: 100vh;
+    background: url('https://www.example.com/image.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+#home h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+#home button {
+    padding: 15px 30px;
+    background-color: #ff6f61;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#home button:hover {
+    background-color: #e34a39;
+}
+
+/* About Me Section */
+#about {
+    padding: 100px 5%;
+    background-color: #fff;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Projects Section */
+#projects {
+    padding: 80px 5%;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.project-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.project-cards .card {
+    width: 45%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-cards .card:hover {
+    transform: scale(1.05);
+}
+
+.project-cards .card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.project-cards .card p {
+    font-size: 1.1rem;
+}
+
+/* Contact Section */
+#contact {
+    padding: 80px 5%;
+    background-color: #fff;
+    text-align: center;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact input,
+#contact textarea {
+    width: 80%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#contact button {
+    padding: 15px 30px;
+    background-color: #005a87;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #003f59;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
